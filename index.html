@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vexrix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 100;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  line-height: 1.2;
+}
+.cta-button {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  border-radius: 5px;
+  padding: 10px 22px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.cta-button:hover {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 36px;
+  }
+  .cta-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 980px;
+  background-image: url('images/269e4649f9b54b74625d9e1d6cff79d8dfad3f67.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 120px; /* Space for header */
+  padding-bottom: 50px;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.52;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.hero-title {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.22;
+  color: var(--text-light);
+  max-width: 900px;
+}
+.hero-title .text-blue {
+  color: var(--primary-blue);
+}
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 150px; /* Approximate space to clear the V logo */
+}
+.stat-item {
+  padding: 20px;
+  border: 1px solid rgba(216, 216, 216, 0.54);
+  min-width: 250px;
+  flex: 1;
+}
+.stat-number {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+.stat-label {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .stats-container {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 120px 0 60px;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .stat-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* CSS for section section:banner */
+.banner-section {
+  background-image: url('images/752889e9d41c3bf39f6efe5046566339a9b61f1a.png');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  text-align: center;
+}
+.banner-quote {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.36;
+  color: var(--text-dark);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 80px 0;
+  }
+  .banner-quote {
+    font-size: 32px;
+  }
+}
+
+/* CSS for section section:needs */
+.needs-section {
+  background-color: var(--bg-dark-2);
+  padding: 100px 0;
+  text-align: center;
+}
+.needs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.needs-title {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.24;
+  color: var(--text-light);
+}
+.needs-title .text-blue {
+  color: var(--primary-blue);
+}
+.needs-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-light);
+  max-width: 880px;
+}
+@media (max-width: 768px) {
+  .needs-section {
+    padding: 60px 0;
+  }
+  .needs-title {
+    font-size: 40px;
+  }
+  .needs-description {
+    font-size: 18px;
+  }
+}
+
+/* CSS for section section:services */
+.services-section {
+  background-color: var(--bg-dark-2);
+  padding: 100px 0;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.service-icon {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+.service-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.28;
+  color: var(--text-light);
+}
+.service-description {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+.service-list {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-light);
+  padding-left: 20px;
+}
+.service-list li {
+  margin-bottom: 1em;
+  list-style-type: disc;
+}
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 60px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #444;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: var(--text-light);
+}
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+}
+
+/* CSS for section section:story */
+.story-section {
+  background-color: var(--bg-dark-2);
+  padding: 80px 0;
+}
+.story-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.story-text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 580px;
+}
+.story-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--primary-blue);
+}
+.story-title {
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 1.24;
+  color: var(--text-light);
+}
+.story-title .text-blue {
+  color: var(--primary-blue);
+}
+.story-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-light);
+}
+.story-image-content {
+  flex: 1;
+  max-width: 609px;
+}
+@media (max-width: 992px) {
+  .story-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .story-text-content {
+    align-items: center;
+  }
+}
+
+/* CSS for section section:stats */
+.stats-section-secondary {
+  background-color: var(--bg-dark-2);
+  padding: 100px 0;
+}
+.stats-secondary-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.stat-item-secondary h3 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--text-light);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .stats-section-secondary {
+    padding: 60px 0;
+  }
+  .stats-secondary-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .stat-item-secondary h3 {
+    font-size: 36px;
+  }
+}
+
+/* CSS for section section:contact */
+.contact-section {
+  background-color: var(--bg-dark-1);
+  padding: 100px 0;
+}
+.contact-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+.contact-info {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-title {
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 1.24;
+}
+.contact-intro {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.contact-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.contact-icon-wrapper img {
+  width: 20px;
+  height: auto;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contact-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-blue);
+}
+.contact-value {
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.83);
+}
+.contact-form-wrapper {
+  flex: 1;
+  background-color: var(--bg-light-gray);
+  border-radius: 25px;
+  padding: 40px;
+  color: var(--text-dark);
+}
+.form-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.24;
+  margin-bottom: 16px;
+}
+.form-intro {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-group label {
+  font-size: 15px;
+  font-weight: 500;
+}
+.required {
+  color: red;
+  margin-left: 2px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 15px;
+  border: 1px solid #cbd6e2;
+  background-color: #f5f8fa;
+  font-family: inherit;
+  font-size: 16px;
+}
+.form-submit {
+  align-self: center;
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  border: none;
+  border-radius: 15px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.form-submit:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info, .contact-form-wrapper {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* CSS for section section:footer */
+.final-footer {
+  background-color: var(--bg-dark-1);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid #333;
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-container">
+    <a href="#" class="logo">Vexrix</a>
+    <a href="#" class="cta-button">Hire Remote Staff</a>
+  </div>
+</header>
+<section id="hero" class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1 class="hero-title">We provide <span class="text-blue">smart solutions in services support and sales to help business grow.</span></h1>
+    <div class="stats-container">
+      <div class="stat-item">
+        <p class="stat-number">2+</p>
+        <p class="stat-label">Active Clients</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-number">360°</p>
+        <p class="stat-label">Business Solution</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-number">0%</p>
+        <p class="stat-label">Operation Hassle</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="banner" class="banner-section">
+  <div class="container">
+    <h2 class="banner-quote">At Vexrix we help focus on growth while we handle your operational technical & sales workflows through our smart scalable support model.</h2>
+  </div>
+</section>
+<section id="needs" class="needs-section">
+  <div class="container needs-content">
+    <h2 class="needs-title">Business <span class="text-blue">Needs</span></h2>
+    <p class="needs-description">We listen assess & craft a custom-fit solution- whether it’s technical support service delivery or sales enablement.</p>
+  </div>
+</section>
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="services-grid">
+      <article class="service-card">
+        <img src="images/cbf6f6e5e837bbf0e2c9816f57f6fb82fd969eeb.png" alt="Comprehensive Delivery Icon" class="service-icon">
+        <h3 class="service-title">Comprehensive Delivery</h3>
+        <p class="service-description">Our expertise helps in streamline operations reduce overhead and scale efficiently we focus on building customised scalable solutions that empower your business to grow confidently and sustainably.</p>
+      </article>
+      <article class="service-card">
+        <img src="images/d95d6f401eba0e8870a22e13b9c97f6502851910.png" alt="Our Core Services Icon" class="service-icon">
+        <h3 class="service-title">Our Core Services</h3>
+        <ul class="service-list">
+          <li>Providing reliable technical assistance to keep your operations smooth.</li>
+          <li>Product sourcing helping your source high-quality products to implement effective strategies.</li>
+          <li>Managing workflows customer support & operational tasks to free up your internal resources.</li>
+          <li>Consulting & Assessing your needs crafting solutions to accelerate growth in sales aspect strategies.</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <img src="images/54db004b4db4c78fbad33af8922e05a6ef355c39.png" alt="Vexrix Provide Icon" class="service-icon">
+        <h3 class="service-title">Vexrix Provide</h3>
+        <p class="service-description">End-to-end project management & execution transparent reporting on flexible engagement model which adapts to your evolving business needs.</p>
+      </article>
+    </div>
+    <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+  </div>
+</section>
+<section id="story" class="story-section">
+  <div class="container story-container">
+    <div class="story-text-content">
+      <h3 class="story-subtitle">Our Story</h3>
+      <h2 class="story-title">At <span class="text-blue">Vexrix, we believe in putting people first</span>-results follow.</h2>
+      <p class="story-description">Founded on the principle that top talent knows no boundaries, Vexrix is more than a movement. Our mission is to connect innovative businesses with industry-leading professionals from around the globe building scalable customized solutions that foster strong relationships.</p>
+    </div>
+    <div class="story-image-content">
+      <img src="images/dcf4f3c278dcc4ed2bd9de3de54298d2f7dcce14.png" alt="A person working with futuristic interfaces." class="story-image">
+    </div>
+  </div>
+</section>
+<section id="stats" class="stats-section-secondary">
+  <div class="container stats-secondary-container">
+    <div class="stat-item-secondary">
+      <h3>2+ Active<br>Clients</h3>
+    </div>
+    <div class="stat-item-secondary">
+      <h3>Established<br>2025</h3>
+    </div>
+    <div class="stat-item-secondary">
+      <h3>3+ Network<br>Countries</h3>
+    </div>
+  </div>
+</section>
+<footer id="contact" class="contact-section">
+  <div class="container contact-container">
+    <div class="contact-info">
+      <h2 class="contact-title">Connect with us! 👋</h2>
+      <p class="contact-intro">Whether you're interested in remote technical support or strategic solutions our team is ready to assist. Reach out today and let's discuss how we can support your growth.</p>
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="contact-icon-wrapper"><img src="images/1_465.svg" alt="Phone Icon"></div>
+          <div class="contact-text">
+            <span class="contact-label">Phone Number</span>
+            <a href="tel:7904249822" class="contact-value">7904249822</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon-wrapper"><img src="images/1_477.svg" alt="Email Icon"></div>
+          <div class="contact-text">
+            <span class="contact-label">Email Address</span>
+            <a href="mailto:founder@vexrix93.com" class="contact-value">founder@vexrix93.com</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon-wrapper"><img src="images/1_489.svg" alt="Clock Icon"></div>
+          <div class="contact-text">
+            <span class="contact-label">Office Hours</span>
+            <span class="contact-value">Monday to Friday, 9 AM - 6 PM EST</span>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon-wrapper"><img src="images/1_501.svg" alt="Location Icon"></div>
+          <div class="contact-text">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">We’re a fully remote company, but our support is global!</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-form-wrapper">
+      <h3 class="form-title">Let’s Build Something Great Together</h3>
+      <p class="form-intro">We pride ourselves on being more than just a remote solution—we’re a partner that helps you succeed. Drop us a message below, and we’ll get back to you as soon as possible.</p>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Work Email Address<span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number<span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="requirements">What Are Your Staffing Requirements?<span class="required">*</span></label>
+          <textarea id="requirements" name="requirements" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Support Help ➜</button>
+      </form>
+    </div>
+  </div>
+</footer>
+<div class="final-footer">
+  <div class="container">
+    <p>&copy; 2025 Vexrix. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
